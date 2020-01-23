@@ -8,13 +8,18 @@ export default class App extends Component{
     render(){
         return(
             <View style={style.container}>
-
                 <Field />
                 <Field opened />
                 <Field opened nearMines={1} />
                 <Field opened nearMines={2} />
                 <Field opened nearMines={3} />
                 <Field opened nearMines={6} />
+
+                <Field mined />
+                <Field mined opened />
+                <Field mined  opened explosed /> 
+                <Field flagged />
+                <Field flagged opened />
             </View>
         )
     }
